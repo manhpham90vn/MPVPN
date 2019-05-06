@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BAD6EF8AC51509883FAE3740A4E7138 /* Pods-MPVPN_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A77C48AA7984B6E743B96498AC474FB /* Pods-MPVPN_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640F446066C89C8AAE47CDE98D2561D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		97C7AA2CBDF0EA4DF19E3DE28042FEED /* MPVPN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E50BDBADD385EB39EDFA09CE36C64741 /* MPVPN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21F44147C253371D60C32AD85DC7656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		BB782F6E2280734E00FD00BA /* ConnectStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F682280734E00FD00BA /* ConnectStatus.swift */; };
+		BB782F6F2280734E00FD00BA /* VPNDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F692280734E00FD00BA /* VPNDelegate.swift */; };
+		BB782F702280734E00FD00BA /* VpnStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F6A2280734E00FD00BA /* VpnStatus.swift */; };
+		BB782F712280734E00FD00BA /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F6B2280734E00FD00BA /* Account.swift */; };
+		BB782F722280734E00FD00BA /* Vpn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F6C2280734E00FD00BA /* Vpn.swift */; };
+		BB782F732280734E00FD00BA /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB782F6D2280734E00FD00BA /* KeychainWrapper.swift */; };
+		BFEC261FE40A7A1927DB489F02F53E71 /* Pods-MPVPN_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9CD47D416FF7F677BDB868D350D9D4 /* Pods-MPVPN_Example-dummy.m */; };
+		CBA875477E282C4D3374D1B1BEB0D4C2 /* MPVPN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 434CC5BE97AB5A89DBEAD6BF5F4F3D87 /* MPVPN-dummy.m */; };
+		DE15AE79644744A5399C067343477E96 /* Pods-MPVPN_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E239FB8964998E6DBBBBF7B2A413900 /* Pods-MPVPN_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E977BD4EA6D8606B804E7BEA413A4FF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FF6452B3BBB4795AE2338F0A3AC0F680 /* Pods-MPVPN_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27690117BCB6E724C6719DA446E0E14A /* Pods-MPVPN_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23B1DC4D9882A0FAD9308CB81FE50A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 915083FD1804C57DD95948F913D0C0CE;
+			remoteInfo = MPVPN;
+		};
+		EB821113EDA391C6EB3F8F40303B8092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BECE1BB00ECA9AF38B746CB31B1D698B;
+			remoteInfo = "Pods-MPVPN_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E239FB8964998E6DBBBBF7B2A413900 /* Pods-MPVPN_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MPVPN_Example-umbrella.h"; sourceTree = "<group>"; };
+		12746AA7EF6C582702841691CC091F46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		18DBADB9323476B6220EEC8996339C39 /* Pods_MPVPN_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPVPN_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2401283B3F06042F903597F0FF6DDA0D /* Pods-MPVPN_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MPVPN_Example.modulemap"; sourceTree = "<group>"; };
+		27690117BCB6E724C6719DA446E0E14A /* Pods-MPVPN_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MPVPN_Tests-dummy.m"; sourceTree = "<group>"; };
+		2BD7592FB96F6220CA89EB267E8738B4 /* Pods-MPVPN_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPVPN_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2EEB1552857B8BF06A6D3F7FB00E5612 /* Pods-MPVPN_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MPVPN_Example-frameworks.sh"; sourceTree = "<group>"; };
+		434CC5BE97AB5A89DBEAD6BF5F4F3D87 /* MPVPN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPVPN-dummy.m"; sourceTree = "<group>"; };
+		52F98A91AB70713162A4061D6F508C5D /* MPVPN.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MPVPN.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53FCB56670F2C0A94DC36F86CE36D6DC /* Pods-MPVPN_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPVPN_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5E987ABB300526439A56EA0D323820FB /* Pods-MPVPN_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPVPN_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F12B02B08EC0C357B41B41F2B75EC22 /* MPVPN-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MPVPN-Info.plist"; sourceTree = "<group>"; };
+		66434F4156A2C059B18BDA4024C9D5D2 /* Pods-MPVPN_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MPVPN_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68EF663ED9E82228C3CE46CABC805631 /* Pods-MPVPN_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPVPN_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6A4D1739C2341AE9FF325A95999A594C /* Pods-MPVPN_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MPVPN_Tests.modulemap"; sourceTree = "<group>"; };
+		78ED16379E0B2C5B87C50095F0C5A7AE /* Pods_MPVPN_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPVPN_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8493F2D58753EEFCC5DF21268DC42A3E /* Pods-MPVPN_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPVPN_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		85F753DC54D89A85A9A478880BE1F13D /* Pods-MPVPN_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MPVPN_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8850E8A644C69B827F5C2559CA971CCA /* Pods-MPVPN_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPVPN_Example-Info.plist"; sourceTree = "<group>"; };
+		8A77C48AA7984B6E743B96498AC474FB /* Pods-MPVPN_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MPVPN_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8E9CD47D416FF7F677BDB868D350D9D4 /* Pods-MPVPN_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MPVPN_Example-dummy.m"; sourceTree = "<group>"; };
+		9A46AC92F4FD0AD3076C8720E46E091F /* MPVPN-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPVPN-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF9B93D16B630A4C3BBB38F590DFA72 /* MPVPN.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MPVPN.modulemap; sourceTree = "<group>"; };
+		BB782F682280734E00FD00BA /* ConnectStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectStatus.swift; path = MPVPN/Classes/ConnectStatus.swift; sourceTree = "<group>"; };
+		BB782F692280734E00FD00BA /* VPNDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VPNDelegate.swift; path = MPVPN/Classes/VPNDelegate.swift; sourceTree = "<group>"; };
+		BB782F6A2280734E00FD00BA /* VpnStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VpnStatus.swift; path = MPVPN/Classes/VpnStatus.swift; sourceTree = "<group>"; };
+		BB782F6B2280734E00FD00BA /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = MPVPN/Classes/Account.swift; sourceTree = "<group>"; };
+		BB782F6C2280734E00FD00BA /* Vpn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vpn.swift; path = MPVPN/Classes/Vpn.swift; sourceTree = "<group>"; };
+		BB782F6D2280734E00FD00BA /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = MPVPN/Classes/KeychainWrapper.swift; sourceTree = "<group>"; };
+		C4289121574F14063B42F809B51E3BEC /* MPVPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MPVPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42FDC1CE4601C476F13FA9C44495E7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA8150E85B0B6800BFA8DD5776F5B127 /* Pods-MPVPN_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MPVPN_Tests-Info.plist"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC018220DD31C562BFDCD21C337C23B9 /* Pods-MPVPN_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MPVPN_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E50BDBADD385EB39EDFA09CE36C64741 /* MPVPN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPVPN-umbrella.h"; sourceTree = "<group>"; };
+		F9C4E95457F12493A9A6A018A8925398 /* MPVPN.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPVPN.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DF057F53547F61040BD1BC77869EF5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640F446066C89C8AAE47CDE98D2561D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DC9E2DA4139B449830E3640185064B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E977BD4EA6D8606B804E7BEA413A4FF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60EF5A54AA2637160C611BA062BEE38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21F44147C253371D60C32AD85DC7656 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		390954CACABA00B5AA0F2FAFD9929647 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DF9B93D16B630A4C3BBB38F590DFA72 /* MPVPN.modulemap */,
+				F9C4E95457F12493A9A6A018A8925398 /* MPVPN.xcconfig */,
+				434CC5BE97AB5A89DBEAD6BF5F4F3D87 /* MPVPN-dummy.m */,
+				5F12B02B08EC0C357B41B41F2B75EC22 /* MPVPN-Info.plist */,
+				9A46AC92F4FD0AD3076C8720E46E091F /* MPVPN-prefix.pch */,
+				E50BDBADD385EB39EDFA09CE36C64741 /* MPVPN-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MPVPN";
+			sourceTree = "<group>";
+		};
+		3C7D43270684BC51DC7A14BD9FFEF4D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				12746AA7EF6C582702841691CC091F46 /* LICENSE */,
+				52F98A91AB70713162A4061D6F508C5D /* MPVPN.podspec */,
+				C42FDC1CE4601C476F13FA9C44495E7B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4337919F2ACD51BE372658C7BBBB5A5B /* Pods-MPVPN_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A4D1739C2341AE9FF325A95999A594C /* Pods-MPVPN_Tests.modulemap */,
+				CC018220DD31C562BFDCD21C337C23B9 /* Pods-MPVPN_Tests-acknowledgements.markdown */,
+				8493F2D58753EEFCC5DF21268DC42A3E /* Pods-MPVPN_Tests-acknowledgements.plist */,
+				27690117BCB6E724C6719DA446E0E14A /* Pods-MPVPN_Tests-dummy.m */,
+				CA8150E85B0B6800BFA8DD5776F5B127 /* Pods-MPVPN_Tests-Info.plist */,
+				8A77C48AA7984B6E743B96498AC474FB /* Pods-MPVPN_Tests-umbrella.h */,
+				5E987ABB300526439A56EA0D323820FB /* Pods-MPVPN_Tests.debug.xcconfig */,
+				68EF663ED9E82228C3CE46CABC805631 /* Pods-MPVPN_Tests.release.xcconfig */,
+			);
+			name = "Pods-MPVPN_Tests";
+			path = "Target Support Files/Pods-MPVPN_Tests";
+			sourceTree = "<group>";
+		};
+		6A6D2A306C80AD023F5E84B573CF0D3A /* Pods-MPVPN_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2401283B3F06042F903597F0FF6DDA0D /* Pods-MPVPN_Example.modulemap */,
+				66434F4156A2C059B18BDA4024C9D5D2 /* Pods-MPVPN_Example-acknowledgements.markdown */,
+				2BD7592FB96F6220CA89EB267E8738B4 /* Pods-MPVPN_Example-acknowledgements.plist */,
+				8E9CD47D416FF7F677BDB868D350D9D4 /* Pods-MPVPN_Example-dummy.m */,
+				2EEB1552857B8BF06A6D3F7FB00E5612 /* Pods-MPVPN_Example-frameworks.sh */,
+				8850E8A644C69B827F5C2559CA971CCA /* Pods-MPVPN_Example-Info.plist */,
+				0E239FB8964998E6DBBBBF7B2A413900 /* Pods-MPVPN_Example-umbrella.h */,
+				53FCB56670F2C0A94DC36F86CE36D6DC /* Pods-MPVPN_Example.debug.xcconfig */,
+				85F753DC54D89A85A9A478880BE1F13D /* Pods-MPVPN_Example.release.xcconfig */,
+			);
+			name = "Pods-MPVPN_Example";
+			path = "Target Support Files/Pods-MPVPN_Example";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A00046D006A387DACA86A0C7914C4D6D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A6D2A306C80AD023F5E84B573CF0D3A /* Pods-MPVPN_Example */,
+				4337919F2ACD51BE372658C7BBBB5A5B /* Pods-MPVPN_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C4A46A1E1D3CAE205130C622CF297EBB /* MPVPN */ = {
+			isa = PBXGroup;
+			children = (
+				BB782F6B2280734E00FD00BA /* Account.swift */,
+				BB782F682280734E00FD00BA /* ConnectStatus.swift */,
+				BB782F6D2280734E00FD00BA /* KeychainWrapper.swift */,
+				BB782F6C2280734E00FD00BA /* Vpn.swift */,
+				BB782F692280734E00FD00BA /* VPNDelegate.swift */,
+				BB782F6A2280734E00FD00BA /* VpnStatus.swift */,
+				3C7D43270684BC51DC7A14BD9FFEF4D0 /* Pod */,
+				390954CACABA00B5AA0F2FAFD9929647 /* Support Files */,
+			);
+			name = MPVPN;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D945A46D1E291CF691EBECDFC4443009 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DBA56C28C82F8D11431E2676DE09D17D /* Products */,
+				A00046D006A387DACA86A0C7914C4D6D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D945A46D1E291CF691EBECDFC4443009 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4A46A1E1D3CAE205130C622CF297EBB /* MPVPN */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DBA56C28C82F8D11431E2676DE09D17D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4289121574F14063B42F809B51E3BEC /* MPVPN.framework */,
+				78ED16379E0B2C5B87C50095F0C5A7AE /* Pods_MPVPN_Example.framework */,
+				18DBADB9323476B6220EEC8996339C39 /* Pods_MPVPN_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8A2C08DDB53CE95B7655B163E0D53207 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C7AA2CBDF0EA4DF19E3DE28042FEED /* MPVPN-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943CC50D188EC2F7604B62EC0AAB914F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAD6EF8AC51509883FAE3740A4E7138 /* Pods-MPVPN_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB18F32868A2929FE7E6EB8F11F3314 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE15AE79644744A5399C067343477E96 /* Pods-MPVPN_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		915083FD1804C57DD95948F913D0C0CE /* MPVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20B24A1A2C831AC7CD5B6A01937C16A /* Build configuration list for PBXNativeTarget "MPVPN" */;
+			buildPhases = (
+				8A2C08DDB53CE95B7655B163E0D53207 /* Headers */,
+				47CAB183AA08142533540A1379B36B6B /* Sources */,
+				9DF057F53547F61040BD1BC77869EF5E /* Frameworks */,
+				1922A96BF6675C7C4F6863AF74664CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPVPN;
+			productName = MPVPN;
+			productReference = C4289121574F14063B42F809B51E3BEC /* MPVPN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BECE1BB00ECA9AF38B746CB31B1D698B /* Pods-MPVPN_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C28485D928CE21DB56701B7A8F3631 /* Build configuration list for PBXNativeTarget "Pods-MPVPN_Example" */;
+			buildPhases = (
+				FEB18F32868A2929FE7E6EB8F11F3314 /* Headers */,
+				691BE7489A915F1CA2357356C6A4A600 /* Sources */,
+				F60EF5A54AA2637160C611BA062BEE38 /* Frameworks */,
+				5D84F10B5F7ED290D5A6AABAFD485A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57587592248DE0C34757C3AD4D3368A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-MPVPN_Example";
+			productName = "Pods-MPVPN_Example";
+			productReference = 78ED16379E0B2C5B87C50095F0C5A7AE /* Pods_MPVPN_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDC9E8F1C9AD3B054A9388F95085B587 /* Pods-MPVPN_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B317A5C1FB81CBF3D8595325612B20B9 /* Build configuration list for PBXNativeTarget "Pods-MPVPN_Tests" */;
+			buildPhases = (
+				943CC50D188EC2F7604B62EC0AAB914F /* Headers */,
+				1370D30DA45479E3570EF38649EBB463 /* Sources */,
+				E8DC9E2DA4139B449830E3640185064B /* Frameworks */,
+				F6121CBE300828F688926E5FD0D3E419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0120DA2F5C63D979393946F3FD3204EF /* PBXTargetDependency */,
+			);
+			name = "Pods-MPVPN_Tests";
+			productName = "Pods-MPVPN_Tests";
+			productReference = 18DBADB9323476B6220EEC8996339C39 /* Pods_MPVPN_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					915083FD1804C57DD95948F913D0C0CE = {
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DBA56C28C82F8D11431E2676DE09D17D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				915083FD1804C57DD95948F913D0C0CE /* MPVPN */,
+				BECE1BB00ECA9AF38B746CB31B1D698B /* Pods-MPVPN_Example */,
+				DDC9E8F1C9AD3B054A9388F95085B587 /* Pods-MPVPN_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1922A96BF6675C7C4F6863AF74664CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D84F10B5F7ED290D5A6AABAFD485A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6121CBE300828F688926E5FD0D3E419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1370D30DA45479E3570EF38649EBB463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6452B3BBB4795AE2338F0A3AC0F680 /* Pods-MPVPN_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAB183AA08142533540A1379B36B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB782F712280734E00FD00BA /* Account.swift in Sources */,
+				BB782F6F2280734E00FD00BA /* VPNDelegate.swift in Sources */,
+				BB782F722280734E00FD00BA /* Vpn.swift in Sources */,
+				BB782F732280734E00FD00BA /* KeychainWrapper.swift in Sources */,
+				BB782F6E2280734E00FD00BA /* ConnectStatus.swift in Sources */,
+				BB782F702280734E00FD00BA /* VpnStatus.swift in Sources */,
+				CBA875477E282C4D3374D1B1BEB0D4C2 /* MPVPN-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		691BE7489A915F1CA2357356C6A4A600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEC261FE40A7A1927DB489F02F53E71 /* Pods-MPVPN_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0120DA2F5C63D979393946F3FD3204EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MPVPN_Example";
+			target = BECE1BB00ECA9AF38B746CB31B1D698B /* Pods-MPVPN_Example */;
+			targetProxy = EB821113EDA391C6EB3F8F40303B8092 /* PBXContainerItemProxy */;
+		};
+		57587592248DE0C34757C3AD4D3368A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MPVPN;
+			target = 915083FD1804C57DD95948F913D0C0CE /* MPVPN */;
+			targetProxy = 23B1DC4D9882A0FAD9308CB81FE50A28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		323CF96E8679D745B7E6ADCB5C3A2FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C4E95457F12493A9A6A018A8925398 /* MPVPN.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MPVPN/MPVPN-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MPVPN/MPVPN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MPVPN/MPVPN.modulemap";
+				PRODUCT_MODULE_NAME = MPVPN;
+				PRODUCT_NAME = MPVPN;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C2D534ED5CE402826FAFAE641B8D55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FCB56670F2C0A94DC36F86CE36D6DC /* Pods-MPVPN_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MPVPN_Example/Pods-MPVPN_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MPVPN_Example/Pods-MPVPN_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63EB183A3E915DB596924B6AD864E2CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F753DC54D89A85A9A478880BE1F13D /* Pods-MPVPN_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MPVPN_Example/Pods-MPVPN_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MPVPN_Example/Pods-MPVPN_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B31DF3F2F3F9A82A4F5DBEC201C24FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E987ABB300526439A56EA0D323820FB /* Pods-MPVPN_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MPVPN_Tests/Pods-MPVPN_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MPVPN_Tests/Pods-MPVPN_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ABFCC3C3147A00006DF0639D829E68DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C4E95457F12493A9A6A018A8925398 /* MPVPN.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MPVPN/MPVPN-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MPVPN/MPVPN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MPVPN/MPVPN.modulemap";
+				PRODUCT_MODULE_NAME = MPVPN;
+				PRODUCT_NAME = MPVPN;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FB1A25FDB6769BA02C54D2C256D509E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EF663ED9E82228C3CE46CABC805631 /* Pods-MPVPN_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MPVPN_Tests/Pods-MPVPN_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MPVPN_Tests/Pods-MPVPN_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B317A5C1FB81CBF3D8595325612B20B9 /* Build configuration list for PBXNativeTarget "Pods-MPVPN_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B31DF3F2F3F9A82A4F5DBEC201C24FF /* Debug */,
+				FB1A25FDB6769BA02C54D2C256D509E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C28485D928CE21DB56701B7A8F3631 /* Build configuration list for PBXNativeTarget "Pods-MPVPN_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C2D534ED5CE402826FAFAE641B8D55A /* Debug */,
+				63EB183A3E915DB596924B6AD864E2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20B24A1A2C831AC7CD5B6A01937C16A /* Build configuration list for PBXNativeTarget "MPVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323CF96E8679D745B7E6ADCB5C3A2FAE /* Debug */,
+				ABFCC3C3147A00006DF0639D829E68DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,61 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-8C-Wfx">
+                                <rect key="frame" x="148.5" y="218.5" width="78" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-IR-CHI">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="50"/>
+                                        <state key="normal" title="Request"/>
+                                        <connections>
+                                            <action selector="requestBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vha-nC-OnB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy5-zF-EBq">
+                                        <rect key="frame" x="0.0" y="60" width="78" height="50"/>
+                                        <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <action selector="connectBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qv4-fC-5Tx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phK-wr-BFc">
+                                        <rect key="frame" x="0.0" y="120" width="78" height="50"/>
+                                        <state key="normal" title="Disconnect"/>
+                                        <connections>
+                                            <action selector="disconnectBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="npj-qB-eep"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-Tj-efO">
+                                        <rect key="frame" x="0.0" y="180" width="78" height="50"/>
+                                        <state key="normal" title="Remove"/>
+                                        <connections>
+                                            <action selector="removeBtnTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mWZ-55-M4M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="6aB-xt-d33"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egC-je-w3r">
+                                <rect key="frame" x="164" y="468.5" width="47.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="egC-je-w3r" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1YR-zj-knm"/>
+                            <constraint firstItem="egC-je-w3r" firstAttribute="top" secondItem="9Qz-8C-Wfx" secondAttribute="bottom" constant="20" id="MrG-l9-ydC"/>
+                            <constraint firstItem="9Qz-8C-Wfx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="aLg-zV-3mf"/>
+                            <constraint firstItem="9Qz-8C-Wfx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nwh-EG-tK0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="egC-je-w3r" id="1mh-FN-oCT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

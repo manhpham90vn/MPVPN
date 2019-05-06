@@ -1,0 +1,6 @@
+framework module MPVPN {
+  umbrella header "MPVPN-umbrella.h"
+
+  export *
+  module * { export * }
+}
