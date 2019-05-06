@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MPVPN_Example' do
+  pod 'MPVPN', :path => '../'
+
+  target 'MPVPN_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
