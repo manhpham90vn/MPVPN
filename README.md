@@ -1,6 +1,6 @@
 # MPVPN
 
-[![CI Status](https://img.shields.io/travis/manhpham90vn/MPVPN.svg?style=flat)](https://travis-ci.org/manhpham90vn/MPVPN)
+[![CI Status](https://travis-ci.com/manhpham90vn/MPVPN.svg?branch=master)](https://travis-ci.org/manhpham90vn/MPVPN)
 [![Version](https://img.shields.io/cocoapods/v/MPVPN.svg?style=flat)](https://cocoapods.org/pods/MPVPN)
 [![License](https://img.shields.io/cocoapods/l/MPVPN.svg?style=flat)](https://cocoapods.org/pods/MPVPN)
 [![Platform](https://img.shields.io/cocoapods/p/MPVPN.svg?style=flat)](https://cocoapods.org/pods/MPVPN)
