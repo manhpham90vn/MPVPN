@@ -5,4 +5,4 @@ xcode_scheme: MPVPN-Example
 xcode_sdk: iphonesimulator11.3
 
 script:
-  - xcodebuild clean build -sdk iphonesimulator -workspace MPVPN.xcworkspace -scheme MPVPN-Example CODE_SIGNING_REQUIRED=YES
+  - xcodebuild clean build -sdk iphonesimulator -workspace Example/MPVPN.xcworkspace -scheme MPVPN-Example CODE_SIGNING_REQUIRED=YES
