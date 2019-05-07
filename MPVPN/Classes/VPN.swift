@@ -1,5 +1,5 @@
 //
-//  Vpn.swift
+//  VPN.swift
 //  MPVPN
 //
 //  Created by Manh Pham on 5/6/19.
@@ -11,7 +11,6 @@ import NetworkExtension
 
 public final class VPN {
     
-    public static let share = VPN()
     public weak var delegate: VPNDelegate?
     
     public func status() -> VpnStatus {
@@ -23,6 +22,8 @@ public final class VPN {
         case .disconnecting: return .disconnecting
         case .invalid: return .invalid
         case .reasserting: return .reasserting
+        @unknown default:
+            fatalError()
         }
     }
     
@@ -32,7 +33,8 @@ public final class VPN {
         return NEVPNManager.shared()
     }
     
-    private init() {
+    public init(delegate: VPNDelegate) {
+        self.delegate = delegate
         addObservers()
     }
     

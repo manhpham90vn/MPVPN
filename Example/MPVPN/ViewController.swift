@@ -11,29 +11,33 @@ import MPVPN
 
 class ViewController: UIViewController {
 
-    var account: Account!
+    let account = Account(serverAddress: "159.65.129.252", sharedSecret: "4ec04e07-f030-4445-ba59-3d8c1cb180a2")
+    
+    lazy var vpn: VPN = {
+        let _vpn = VPN(delegate: self)
+        return _vpn
+    }()
+    
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func requestBtnTapped(_ sender: Any) {
-        VPN.share.requestPermision(account: account)
+        vpn.requestPermision(account: account)
     }
     
     @IBAction func connectBtnTapped(_ sender: Any) {
-        VPN.share.connect()
+        vpn.connect()
     }
     
     @IBAction func disconnectBtnTapped(_ sender: Any) {
-        VPN.share.disconnect()
+        vpn.disconnect()
     }
     
     @IBAction func removeBtnTapped(_ sender: Any) {
-        VPN.share.removeFromPreferences()
+        vpn.removeFromPreferences()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        account = Account(serverAddress: "159.65.129.252", sharedSecret: "4ec04e07-f030-4445-ba59-3d8c1cb180a2")
-        VPN.share.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
