@@ -22,7 +22,7 @@ pod 'MPVPN'
 
 ## Author
 
-manhpham90vn, manh.pham@fujitechjsc.com
+manhpham90vn, manhpham90vn@icloud.com
 
 ## License
 
