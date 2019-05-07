@@ -11,8 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+```
 Swift 5
 IKEv2 VPN with PSK
+```
 
 https://github.com/manhpham90vn/ikev2_vpn
 
