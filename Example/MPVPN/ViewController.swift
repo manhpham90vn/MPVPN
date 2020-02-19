@@ -53,14 +53,14 @@ extension ViewController: VPNDelegate {
     }
     
     func vpn(_ vpn: VPN, didRequestPermission status: ConnectStatus) {
-        
+        print(status.description)
     }
     
     func vpn(_ vpn: VPN, didConnectWithError error: String?) {
-        
+        print(error ?? "")
     }
     
     func vpnDidDisconnect(_ vpn: VPN) {
-        
+        print("disconnect")
     }
 }
