@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func removeBtnTapped(_ sender: Any) {
         vpn.removeFromPreferences()
-    }
+//    }ß
     
     override func viewDidLoad() {
         super.viewDidLoad()
